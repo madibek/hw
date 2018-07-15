@@ -32,9 +32,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: yarn ng build --prod --build-optimizer --no-progress
         
       # run tests!
       # - run: yarn test
 
       # deploy app to github.io
-      - run: angular-cli-ghpages
+      # - run: angular-cli-ghpages
