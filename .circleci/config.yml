@@ -36,3 +36,5 @@ jobs:
       # run tests!
       # - run: yarn test
 
+      # deploy app to github.io
+      - run: npm angular-cli-ghpages
