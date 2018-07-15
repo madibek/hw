@@ -40,3 +40,7 @@ jobs:
 
       # deploy app to github.io
       # - run: angular-cli-ghpages
+
+      - run:
+          command: |
+            angular-cli-ghpages
